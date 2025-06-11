@@ -1,0 +1,2 @@
+# nvx-redirect
+index.html
