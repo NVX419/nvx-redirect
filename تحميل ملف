@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي التجريبي السلس</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #171717;
+            padding: 20px 0 15px 0;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.7rem;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            background: #272727;
+            padding: 10px 24px;
+            border-radius: 6px;
+            margin: 0 8px;
+            font-size: 1.1rem;
+            transition: background 0.3s, color 0.3s;
+            display: inline-block;
+        }
+        nav a:hover, nav a.active {
+            background: #3f51b5;
+            color: #fff;
+        }
+        main {
+            max-width: 700px;
+            margin: 35px auto;
+            background: rgba(34,34,34,0.9);
+            border-radius: 14px;
+            padding: 36px 28px;
+            box-shadow: 0 7px 24px rgba(0,0,0,0.18);
+        }
+        section {
+            display: none;
+            animation: fadein 0.6s;
+        }
+        section.active {
+            display: block;
+        }
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(30px);}
+            to { opacity: 1; transform: none;}
+        }
+        .features {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 18px 0 0 0;
+        }
+        .feature {
+            background: #232d3b;
+            border-radius: 8px;
+            padding: 24px 18px;
+            width: 170px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+            transition: transform 0.25s;
+        }
+        .feature:hover {
+            transform: translateY(-8px) scale(1.04);
+            background: #34425a;
+        }
+        .feature i {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #7ed957;
+        }
+        .feature h3 {
+            margin: 10px 0 8px 0;
+            font-size: 1.1rem;
+        }
+        .contact-form {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .contact-form button {
+            background: #3f51b5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 0;
+            font-size: 1.08rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #283593;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #bbb;
+            font-size: 1rem;
+            padding-bottom: 12px;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 16px 4vw;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-bolt"></i> موقعي السلس</h1>
+    </header>
+    <nav>
+        <a href="#" class="active" onclick="showSection(event, 'home')">الرئيسية</a>
+        <a href="#" onclick="showSection(event, 'features')">المميزات</a>
+        <a href="#" onclick="showSection(event, 'contact')">تواصل معنا</a>
+    </nav>
+    <main>
+        <section id="home" class="active">
+            <h2>👋 أهلاً بك في الموقع التجريبي السلس!</h2>
+            <p>
+                هذا موقع تجريبي مصمم بلغة <b>HTML</b> مع لمسات CSS وبدون أي تعقيد.<br>
+                يمكنك استعراض المميزات أو التواصل معنا مباشرة من هنا.
+            </p>
+        </section>
+        <section id="features">
+            <h2>مميزات الموقع</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>متجاوب</h3>
+                    <p>يعمل بشكل رائع على الجوال والكمبيوتر.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-magic"></i>
+                    <h3>تصميم سلس</h3>
+                    <p>ألوان هادئة وحركة انتقالية ناعمة.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    <h3>سهل التعديل</h3>
+                    <p>يمكنك تغيير المحتوى بسهولة من الكود.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-paper-plane"></i>
+                    <h3>تواصل مباشر</h3>
+                    <p>نموذج تواصل بسيط وفعال.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>تواصل معنا</h2>
+            <form class="contact-form" onsubmit="return submitForm(event)">
+                <input type="text" placeholder="اسمك" required>
+                <input type="email" placeholder="بريدك الإلكتروني" required>
+                <textarea placeholder="رسالتك" required></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
+                <div id="msg" style="display:none; color:#7ed957;">تم الإرسال بنجاح!</div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 موقعي السلس | برمجة <b>NVX419</b>
+    </footer>
+    <script>
+        function showSection(event, sectionId) {
+            event.preventDefault();
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('main section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+        function submitForm(e) {
+            e.preventDefault();
+            document.querySelector('.contact-form #msg').style.display = 'block';
+            setTimeout(() => {
+                document.querySelector('.contact-form #msg').style.display = 'none';
+                document.querySelector('.contact-form').reset();
+            }, 2000);
+            return false;
+        }
+    </script>
+</body>
+</html>
