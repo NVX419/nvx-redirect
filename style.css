@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.desc {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.install-btn {
+    display: block;
+    background: #22c55e;
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.install-btn:hover {
+    background: #16a34a;
+}
+
+.specs {
+    background: #020617;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.specs h2 {
+    margin-top: 0;
+}
+
+.specs ul {
+    padding-right: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+}
