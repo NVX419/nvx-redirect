@@ -3,58 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loai Perfumes | متجر عطور</title>
+    <title>Loai Perfumes | Le Male Elixir</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="main-header">
-    <img src="logo.jpg" class="logo">
+<header class="header">
+    <div class="brand">
+        <img src="logo.jpg" alt="Loai Perfumes Logo">
+        <h1>Loai Perfumes</h1>
+        <span>Luxury Fragrance House</span>
+    </div>
+
     <nav>
         <a href="#home">الرئيسية</a>
-        <a href="#products">منتجات</a>
-        <a href="#offers">العروض</a>
-        <a href="#contact">اتصل</a>
+        <a href="#product">العطر</a>
+        <a href="#buy">شراء</a>
     </nav>
 </header>
 
-<section id="home" class="hero-section">
+<section id="home" class="hero">
+    <img src="perfume.jpg" class="hero-img" alt="Le Male Elixir">
+
     <div class="hero-text">
-        <h1>Loai Perfumes</h1>
-        <p>تجربة فاخرة لعطر <span>Le Male Elixir</span></p>
-        <button onclick="scrollToSection('products')">تصفح المنتجات</button>
-    </div>
-    <div class="hero-img">
-        <img src="perfume.jpg" alt="Le Male Elixir">
+        <h2>Le Male Elixir</h2>
+        <p>عطر رجالي فاخر بتركيبة دافئة وجذابة</p>
+        <div class="price">350 جنيه</div>
+
+        <button class="buy-btn"
+            onclick="buyWhatsapp()">
+            اطلب عبر واتساب
+        </button>
     </div>
 </section>
 
-<section id="products" class="products-section">
-    <h2>منتجاتنا</h2>
-    <div class="product-grid">
-        <!-- المنتج الرئيسي -->
-        <div class="product-card">
-            <img src="perfume.jpg" alt="Le Male Elixir">
-            <h3>Le Male Elixir</h3>
-            <p class="price">350 جنيه</p>
-            <button class="btn-whatsapp" onclick="buyWhatsapp()">
-                اطلب عبر واتساب
-            </button>
-        </div>
+<section id="product" class="section">
+    <h3>تفاصيل العطر</h3>
+
+    <div class="details">
+        <div>🔥 ثبات طويل</div>
+        <div>🍯 فانيليا وعسل</div>
+        <div>🌲 عنبر وخشب</div>
+        <div>💎 مناسب للسهرات</div>
     </div>
 </section>
 
-<section id="offers" class="offers-section">
-    <h2>عروض حصرية</h2>
-    <div class="offer-card">
-        <h3>خصم خاص</h3>
-        <p>احصل على عطر Le Male Elixir بسعر مميز</p>
-        <button class="btn-whatsapp" onclick="buyWhatsapp()">اطلب الآن</button>
-    </div>
+<section id="buy" class="cta">
+    <h3>جاهز للتجربة؟</h3>
+    <p>اطلب الآن واستمتع بعطر فاخر</p>
+    <button class="buy-btn" onclick="buyWhatsapp()">تواصل واتساب</button>
 </section>
 
-<footer id="contact" class="footer">
-    <p>© 2025 Loai Perfumes - جميع الحقوق محفوظة</p>
+<footer>
+    <p>© 2025 Loai Perfumes – Crafted with passion</p>
 </footer>
 
 <script src="script.js"></script>
