@@ -1,41 +1,91 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Loai Perfumes - Le Male Elixir</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Loai Perfumes | Le Male Elixir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="https://i.imgur.com/Mgq2v1v.png" alt="Loai Perfumes Logo" class="brand-logo" />
-    <h1>Loai Perfumes</h1>
-  </header>
 
-  <main>
-    <section class="product-section">
-      <h2>العطر المميز</h2>
-      <div class="product-card">
-        <img src="https://i.imgur.com/qkBQB5c.png" alt="Le Male Elixir" class="product-image" />
-        <div class="product-info">
-          <h3>Le Male Elixir</h3>
-          <p class="price">السعر: 350 جنيه</p>
-          <ul class="features">
-            <li>رائحة فريدة وجذابة</li>
-            <li>ثبات عالي يدوم طويلاً</li>
-            <li>تصميم أنيق وعصري</li>
-            <li>مناسب لجميع المناسبات</li>
-          </ul>
-          <button id="buy-now-btn">اشتري الآن عبر واتساب</button>
+<!-- HEADER -->
+<header class="header">
+    <img src="logo.jpg" class="logo">
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن العطر</a>
+        <a href="#details">التفاصيل</a>
+        <a href="#buy">شراء</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Le Male Elixir</h1>
+        <p>قوة الرجولة بلمسة ذهبية فاخرة</p>
+        <span class="price">350 جنيه</span>
+        <button class="ripple-btn buy-btn" data-link="https://api.whatsapp.com/send/?phone=201011580685&text&type=phone_number&app_absent=0&wame_ctl=1">
+            اطلب عبر واتساب
+        </button>
+    </div>
+    <div class="hero-img">
+        <img src="perfume.jpg">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section dark">
+    <h2>عن العطر</h2>
+    <p>
+        Le Male Elixir من Loai Perfumes هو عطر يجسد القوة والفخامة.
+        مزيج متوازن بين الدفء والجرأة، مصمم للرجل الواثق.
+    </p>
+</section>
+
+<!-- DETAILS -->
+<section id="details" class="section">
+    <h2>تفاصيل الرائحة</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>المقدمة</h3>
+            <p>لمسة فانيليا دافئة مع توابل جذابة</p>
         </div>
-      </div>
-    </section>
-  </main>
+        <div class="card">
+            <h3>القلب</h3>
+            <p>عنبر فاخر يعطي عمق وأناقة</p>
+        </div>
+        <div class="card">
+            <h3>القاعدة</h3>
+            <p>خشب ولمسة عسل ناعمة تدوم</p>
+        </div>
+    </div>
+</section>
 
-  <footer>
-    <p>© 2024 Loai Perfumes جميع الحقوق محفوظة</p>
-  </footer>
+<!-- WHY -->
+<section class="section dark">
+    <h2>لماذا تختار Loai Perfumes؟</h2>
+    <ul class="why">
+        <li>✔ ثبات عالي</li>
+        <li>✔ جودة فاخرة</li>
+        <li>✔ سعر منافس</li>
+        <li>✔ مناسب للمناسبات الخاصة</li>
+    </ul>
+</section>
 
-  <script src="script.js"></script>
+<!-- BUY -->
+<section id="buy" class="buy-section">
+    <h2>جاهز للطلب؟</h2>
+    <p>احصل على Le Male Elixir الآن</p>
+    <button class="ripple-btn buy-btn" data-link="https://api.whatsapp.com/send/?phone=201011580685&text&type=phone_number&app_absent=0&wame_ctl=1">
+        تواصل عبر واتساب
+    </button>
+</section>
+
+<footer>
+    <p>© 2025 Loai Perfumes</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
