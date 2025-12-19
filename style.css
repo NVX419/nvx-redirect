@@ -1,63 +1,148 @@
+/* إعادة تعيين بعض الخصائص الأساسية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  direction: rtl;
+  line-height: 1.6;
 }
 
-.container {
-    max-width: 420px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+header {
+  background-color: #111;
+  color: #d4af37; /* ذهبي */
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.logo {
-    width: 140px;
-    margin-bottom: 15px;
+.brand-logo {
+  max-width: 120px;
+  margin-bottom: 10px;
 }
 
-h1 {
-    margin: 10px 0;
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-.desc {
-    color: #cbd5e1;
-    margin-bottom: 20px;
+.product-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #444;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
-.install-btn {
-    display: block;
-    background: #22c55e;
-    color: #000;
-    padding: 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 25px;
+.product-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  align-items: center;
 }
 
-.install-btn:hover {
-    background: #16a34a;
+.product-image {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
-.specs {
-    background: #020617;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: right;
+.product-image:hover {
+  transform: scale(1.05);
 }
 
-.specs h2 {
-    margin-top: 0;
+.product-info {
+  max-width: 450px;
 }
 
-.specs ul {
-    padding-right: 20px;
+.product-info h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #d35400; /* لون برتقالي */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 25px;
+  padding-right: 20px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  position: relative;
+  padding-right: 25px;
+}
+
+.features li::before {
+  content: "✔";
+  position: absolute;
+  right: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+#buy-now-btn {
+  background-color: #25d366; /* لون الواتساب */
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.6);
+}
+
+#buy-now-btn:hover {
+  background-color: #1ebe5d;
 }
 
 footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #94a3b8;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #111;
+  color: #ccc;
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+/* تصميم مستجيب */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+  }
+  
+  .product-image {
+    max-width: 80%;
+  }
+  
+  .product-info {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .features {
+    padding-right: 0;
+  }
 }
